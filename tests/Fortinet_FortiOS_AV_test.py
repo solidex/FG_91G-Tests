@@ -10,7 +10,7 @@ def test(nr, devices):
     mas = []
     results = en.send_commands(nr, "curl -k https://secure.eicar.org/eicar.com")
     mas = en.add_result(results, devices, '    <p>You are not permitted to download the file', mas, T)
-    results = nr.run(task=netmiko_send_command, command_string=f"curl http://172.17.17.112", read_timeout=50)
+    results = nr.run(task=netmiko_send_command, command_string=f"curl http://<apache server with eicar.com>", read_timeout=50)
     mas = en.add_result(results, devices, '    <p>You are not permitted to download the file', mas, T)
     return en.check_answer(mas)
 
