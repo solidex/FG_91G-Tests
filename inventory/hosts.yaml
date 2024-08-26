@@ -1,45 +1,45 @@
 # hosts.yaml file
 Office_Prod_UTM:
-  hostname: '172.17.17.91'
+  hostname: '<cluster-ip>'
   groups:
     - 'fortios'
 
 Office_Inet_UTM:
-  hostname: '172.17.17.116'
+  hostname: '<cluster-ip>'
   groups:
     - 'fortios'
 
 NO_Office_Prod_UTM:
-  hostname: '172.17.17.91'
+  hostname: '<cluster-ip>'
   groups:
     - 'nofortios'
 
 NO_Office_Inet_UTM:
-  hostname: '172.17.17.116'
+  hostname: '<cluster-ip>'
   groups:
     - 'nofortios'
 
 Forti_Manager:
-  hostname: '172.17.18.228'
+  hostname: '<ip>'
   groups:
     - 'manager'
 
 Forti_Analyzer:
-  hostname: '172.17.18.227'
+  hostname: '<ip>'
   groups:
     - 'analyzer'
 
 Forti_Auth:
-  hostname: '172.17.17.150'
+  hostname: '<ip>'
   groups:
     - 'auth'
 
 Localhost:
-  hostname: '172.17.17.130'
+  hostname: '<ip>'
   groups:
     - 'pc'
 
 TestPC:
-  hostname: '172.17.17.112'
+  hostname: '<ip>'
   groups:
     - 'pc_srv'
