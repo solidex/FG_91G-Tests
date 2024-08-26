@@ -1,0 +1,36 @@
+# groups.yaml file
+
+fortios:
+  platform: 'fortinet'
+  username: 'admin'
+  password: '3az2FzseYh' 
+
+nofortios:
+  platform: 'fortinet'
+  username: 'noadmin'
+  password: 'nopassword' 
+
+pc:
+  platform: 'generic'
+  username: 'asya'
+  password: '04102002' 
+
+pc_srv:
+  platform: 'linux'
+  username: 'fujitsu'
+  password: 'fujitsu' 
+
+manager:
+  platform: 'fortinet'
+  username: 'api_admin'
+  password: 'ane9essreapmpqoy7wufzjr96dxiakse' 
+
+analyzer:
+  platform: 'fortinet'
+  username: 'api_admin'
+  password: '3pa3enzy93x8hi5qw6w4a7kewbfbdqfx' 
+
+auth:
+  platform: 'fortiauth'
+  username: 'admin'
+  password: 'adminadmin'
