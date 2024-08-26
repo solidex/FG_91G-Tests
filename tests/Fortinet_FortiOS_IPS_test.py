@@ -9,7 +9,7 @@ def test(nr, devices):
     mas = []
     results = en.send_commands(nr, "curl -k https://secure.eicar.org/eicar.com")
     mas = add_result(results, devices, 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*', mas, T)
-    results = nr.run(task=netmiko_send_command, command_string=f"curl http://172.17.17.112", read_timeout=50)
+    results = nr.run(task=netmiko_send_command, command_string=f"curl http://<apache server with eicar.com>", read_timeout=50)
     mas = add_result(results, devices, 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*', mas, T)
     return en.check_answer(mas)
 
