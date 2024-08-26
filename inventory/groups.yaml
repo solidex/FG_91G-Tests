@@ -2,8 +2,8 @@
 
 fortios:
   platform: 'fortinet'
-  username: 'admin'
-  password: '3az2FzseYh' 
+  username: '<user>'
+  password: '<password>' 
 
 nofortios:
   platform: 'fortinet'
@@ -12,25 +12,25 @@ nofortios:
 
 pc:
   platform: 'generic'
-  username: 'asya'
-  password: '04102002' 
+  username: '<user>'
+  password: '<password>' 
 
 pc_srv:
   platform: 'linux'
-  username: 'fujitsu'
-  password: 'fujitsu' 
+  username: '<user>'
+  password: '<password>' 
 
 manager:
   platform: 'fortinet'
-  username: 'api_admin'
-  password: 'ane9essreapmpqoy7wufzjr96dxiakse' 
+  username: '<api-user>'
+  password: '<api-token>' 
 
 analyzer:
   platform: 'fortinet'
-  username: 'api_admin'
-  password: '3pa3enzy93x8hi5qw6w4a7kewbfbdqfx' 
+  username: '<api-admin>'
+  password: '<api-token>' 
 
 auth:
   platform: 'fortiauth'
-  username: 'admin'
-  password: 'adminadmin'
+  username: '<user>'
+  password: '<password>'
