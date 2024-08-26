@@ -25,12 +25,3 @@ def cut(results, check_string):
                 return "OK"
     print(bcolors.BOLD + "Check: " + bcolors.FAIL + "Fail")
     return "Fail"
-    
-# AV Engine
-# Virus Definitions
-# Mobile Malware Definitions
-# Flow-based Virus Definitions
-# AI/Machine Learning Malware Detection Model
-
-#get log syslogd setting
-#status              : disable
