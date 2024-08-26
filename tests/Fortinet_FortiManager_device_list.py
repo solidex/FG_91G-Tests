@@ -38,10 +38,4 @@ def add_result(results, devices, check_string, mas):
         except:
             print(bcolors.WARNING + f"Отсутствует подключение к {i}" + bcolors.ENDC)
             mas.append("ERROR")
-    return mas
-
-#diag dvm device list
-#diag dvm device au
-#TYPE            OID    SN               HA      IP              NAME              ADOM       MODE   FLAGS          
-#unregistered    165    FEVM020000216145 -       172.17.17.245   FEVM020000216145  FortiMail  -                     
-#unregistered    166    FG6H0FTB22901187 -       212.98.160.126  FG6H0FTB22901187  root       -            
+    return mas      
