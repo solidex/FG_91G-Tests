@@ -7,8 +7,8 @@ fortios:
 
 nofortios:
   platform: 'fortinet'
-  username: 'noadmin'
-  password: 'nopassword' 
+  username: '<wrong-admin>'
+  password: '<wrong-password>' 
 
 pc:
   platform: 'generic'
