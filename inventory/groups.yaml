@@ -10,11 +10,6 @@ nofortios:
   username: '<wrong-admin>'
   password: '<wrong-password>' 
 
-pc:
-  platform: 'generic'
-  username: '<user>'
-  password: '<password>' 
-
 pc_srv:
   platform: 'linux'
   username: '<user>'
