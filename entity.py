@@ -61,9 +61,29 @@ def add_result(results, devices, check_string, mas, T):
             mas.append(answ_dev)
     return mas
 
+def add_result_fw(results, devices, check_string, mas, T):
+    print(bcolors.OKBLUE + devices + bcolors.ENDC)
+    try:
+        answ_dev = T.cut(results, check_string)
+        mas.append(answ_dev)
+        if answ_dev == "ERROR":
+            print(bcolors.WARNING + str(results) + bcolors.ENDC)
+            print(bcolors.BOLD + "Check: " + bcolors.FAIL + "Fail")
+    except:
+        print(bcolors.WARNING + f"Отсутствует подключение к {devices}" + bcolors.ENDC)
+        answ_dev = "ERROR"
+        mas.append(answ_dev)
+    return mas
+
 def get_device_api(nr, name):
     a = nr.inventory.dict()
     b = dict(list(a.values())[0])[name]['groups'][0]
     c = dict(list(a.values())[0])[name]['hostname']
     d = dict(list(a.values())[1])[b]['password']
     return [c, d]
+
+def get_serv(nr):
+    a = nr.inventory.dict()
+    name = list(dict(list(a.values())[0]).keys())
+    serv = dict(list(a.values())[0])[name[0]]['hostname']
+    return serv
